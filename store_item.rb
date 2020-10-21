@@ -1,20 +1,11 @@
 class Toy_store
+  attr_reader :toy, :color, :price
+  attr_writer :price
+
   def initialize(toy, color, price)
     @toy = toy
     @color = color
     @price = price
-  end
-
-  def toy
-    @toy
-  end
-
-  def color
-    @color
-  end
-
-  def price
-    @price
   end
 
   def print_info
